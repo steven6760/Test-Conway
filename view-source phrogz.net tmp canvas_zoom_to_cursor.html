@@ -1,0 +1,16 @@
+
+<!DOCTYPE HTML>
+<html lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Zooming via HTML5 Canvas Context</title>
+	<style type="text/css" media="screen">
+		body { background:#eee; margin:1em; text-align:center; }
+		canvas { display:block; margin:1em auto; background:#fff; border:1px solid #ccc }
+	</style>
+</head><body>
+<p>Showing how to use transform methods on the HTML5 Canvas Context to selectively zoom in and out. Drag to pan. Click to zoom at that location. Shift-click to zoom out. Mousewheel up/down over the canvas to zoom in to/out from that location.</p>
+<p>By redrawing the canvas at different scales the strokes remain smooth during zooming. For example, zoom in on the earring or circle on the forehead to see fine detail.</p>
+<canvas></canvas>
+<p id="footer">Copyright © 2011 <a href="mailto:!@phrogz.net">Gavin Kistner</a>. Written to support <a href="http://stackoverflow.com/questions/5189968/zoom-to-cursor-calculations/5526721#5526721">this Stack Overflow answer</a>.</p>
+<script src = "zoom_canvas.js"></script>
+</body></html>

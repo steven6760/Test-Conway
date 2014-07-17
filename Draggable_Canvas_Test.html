@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+    <script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v5.0.2.min.js"></script>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script defer="defer">
+      var stage = new Kinetic.Stage({
+        container: 'container',
+        width: 578,
+        height: 200,
+        draggable: true
+      });
+
+      var layer = new Kinetic.Layer();
+
+      var circle = new Kinetic.Circle({
+        x: 200,
+        y: 100,
+        radius: 70,
+        fill: 'red',
+        stroke: 'black',
+        strokeWidth: 4
+      });
+
+      // add the shape to the layer
+      layer.add(circle);
+
+      // add the layer to the stage
+      stage.add(layer);
+    </script>
+  </body>
+</html>      
